@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(15, 0, 61);
+    color: white;
+    font-family: 'EB Garamond';
+}
+
+hr {
+    border: none;
+    border-top: 3px double #ffffff;
+    overflow: visible;
+    text-align: center;
+    height: 0px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 15px;
+}
+
+li {
+    font-size: 15px;
+}
+
+.name {
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.info-section {
+    text-align: center;
+    font-size: 15px;
+}
+
+.section-header {
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+.Name-And-Date-Row {
+    display: flex;
+}
+
+.column-left {
+    flex: 70%;
+    height: 10px;
+    max-width: 600px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.column-right {
+    flex: 40%;
+    height: 12px;
+    text-align: right;
+}
+.info-row {
+    display: flex;
+}
+
+.info-section-left {
+    flex: 50%;
+    height: 10px;
+}
+
+.info-section-right {
+    flex: 50%;
+    height: 12px;
+    text-align: right;
+}
