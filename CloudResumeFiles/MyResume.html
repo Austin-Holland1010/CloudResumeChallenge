@@ -8,8 +8,9 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="ViewCount.js"></script>
 </head>
-<body>
+<body onload = "getViewCount()">
 
 <div class="container-fluid">
   <h1 class="name">Austin Holland</h1>
@@ -31,7 +32,7 @@
         <h4 class="column-left">AWS Certified Cloud Practitioner</h4>
         <h4 class="column-right">August 2023</h4>
     </div>
-    <p>Validity: Until Auguest 1st, 2026</p>
+    <p>Validity: Until Auguest 14th, 2026</p>
 </div>
 <div>
     <h3 class="section-header">PROJECTS</h3>
@@ -40,45 +41,57 @@
         <h4 class="column-left">NASA Psyche Web-Based Game Capstone Project</h4>
         <h4 class="column-right">September 2022 - May 2023</h4>
     </div>
-    <ui>
+    <ul>
         <li>Used Unity to create a web game based on the formation of the Psyche asteroid.</li>
         <li>Created a particle-based system to demonstrate the loss of mass resulting from asteroid impacts.</li>
         <li>Wrote C# scripts to handle events in the game.</li>
         <li>Practiced agile development. </li>
         <li>Used GitHub for version control between group members.</li>
-    </ui>
+    </ul>
+    <br />
+    <div class="Name-And-Date-Row">
+        <h4 class="column-left">Cloud Resume Challenge</h4>
+        <h4 class="column-right">August 2023</h4>
+    </div>
+    <ul>
+        <li>Created a static website utilizing many of the fundamental AWS services.</li>
+        <li>Hosted the website in a S3 bucket and set up HTTPS access using CloudFront. </li>
+        <li>Linked a DNS domain name to the CloudFront Distribution.</li>
+        <li>Setup a DynamoDB database, a Lambda function to query the database, and a REST API in the AWS API Gateway to invoke the Lambda function.</li>
+        <li>Using the API I created a page viewed counter to keep track of how many times the page was opened/refreshed.</li>
+    </ul>
     <br />
     <div class="Name-And-Date-Row">
         <h4 class="column-left">Water Dog Pool Care React Web Application</h4>
         <h4 class="column-right">Summer 2023</h4>
     </div>
-    <ui>
+    <ul>
         <li>Created a web portal to easily store and view customer data.</li>
         <li>Utilized React to create a data driven front end that updated based on changes made within the app.</li>
         <li>Created a REST API that allows the front end to make requests such as view all customers, get specific customer data, update customer data, and remove customers.</li>
         <li>REST services use a PostgreSQL database to store/retrieve data and return relevant data in JSON format.</li>
         <li>Styled the web application using Bootstrap.</li>
-    </ui>
+    </ul>
     <br />
     <div class="Name-And-Date-Row">
         <h4 class="column-left">ASP.NET Web Application and Web Service Project</h4>
         <h4 class="column-right">Fall 2022</h4>
     </div>
-    <ui>
+    <ul>
         <li>Utilized the ASP.NET framework to create a light-weight text editor web application that uses REST and SOAP services to perform all backend functionality.</li>
         <li>Implemented the services by writing them in C# then deploying them to a live AWS server.</li>
         <li>Created a REST API to access the REST services from the web application.</li>
-    </ui>
+    </ul>
     <br />
     <div class="Name-And-Date-Row">
         <h4 class="column-left">SQL Java Project</h4>
         <h4 class="column-right">Spring 2022</h4>
     </div>
-    <ui>
+    <ul>
         <li>Utilized the JavaFX library to create a GUI for the application.</li>
         <li>Created a way for users to query restaurant data in Tempe, Arizona and find restaurants based on their preferences.</li>
         <li>Setup a PostgreSQL database and populated tables from real-world data.</li>
-    </ui>
+    </ul>
     <br />
     <h4>GitHub: <a href="https://github.com/Austin-Holland1010">https://github.com/Austin-Holland1010</a> </h4>
     <div>
@@ -89,7 +102,9 @@
         <h5><b style="font-size: 16px">Professional Skills:</b> Agile/scrum methodology, SOAP and RESTful service development, Relational databases</h5>
     </div>
     <br />
+
 </div>
+<label class="viewLabel" id="viewCountLabel"># of times the page has been viewed</label>
 </div>
 </body>
 </html>
