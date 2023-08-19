@@ -23,6 +23,11 @@ li {
     font-size: 15px;
 }
 
+ul {
+    list-style-position: outside;
+    padding: 15px;
+}
+
 .name {
     text-align: center;
     font-weight: bold;
@@ -69,4 +74,12 @@ li {
     flex: 50%;
     height: 12px;
     text-align: right;
+}
+
+.viewLabel {
+    display: block;
+    text-align: center;
+    background-color: rgb(28, 1, 107);
+    font-size: 18px;
+    font-weight: bold;
 }
